@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img id="logo" src="assets/images/logo.jpg" alt="Ocorreu um erro!">
+            <h1>AvaliApp</h1>
+            <ul id="menu-nav">
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="Acesso.html">Novos Pedidos</a></li>
+                <li><a href="lista_pedidos.html">Lista de Pedidos</a></li> <!-- Nova opção de menu -->
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="cabeçalho">
+        <h2>Pedidos</h2>
+    </div>
+
+    <section id="secao-planejamento">
+        <h2>Faça aqui seu Pedido</h2>
+        
+        <form id="form-pedido">
+            <div class="demanda nome">
+                <label for="nome-projeto">Nome do projeto</label>
+                <input type="text" id="nome-projeto" required>
+            </div>
+
+            <div class="demanda-tipo">
+                <label for="tipo">Qual modelo?</label>
+                <select id="tipo" required>
+                    <option value="App-Todas as plataformas" selected>App-Todas as plataformas</option>
+                    <option value="App-Ios">App-iOS</option>
+                    <option value="App-Android">App-Android</option>
+                    <option value="Software">Software</option>
+                    <option value="Site">Site</option>
+                    <option value="Completo">Completo</option>
+                </select>
+            </div>
+
+            <div class="demanda-sobre">
+                <label for="sobre">Descreva sua empresa</label>
+                <input type="text" id="sobre" required>
+            </div>
+
+            <div class="demanda-prazo">
+                <label for="prazo">Qual o prazo?</label>
+                <input type="date" id="prazo" required>
+            </div>
+
+            <div class="Botao">
+                <button type="button" id="botao-cancelar">Cancelar</button>
+                <button type="submit" id="botao-cadastrar">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="pedidos-section" style="display:none;">
+        <h2>Meus Pedidos</h2>
+        <div id="pedidos-lista"></div>
+    </section>
+
+    <script src="assets/js/acesso.js"></script>
+</body>
+</html>

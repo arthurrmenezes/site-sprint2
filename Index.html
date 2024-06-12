@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="assets/js/cadastrar.js"></script>
+</head>
+<header>
+    <nav>
+        <img id="logo" src="assets/images/logo.jpg" alt="Ocorreu um erro!">
+        <h1>AvaliApp</h1>
+        <ul id="menu-nav">
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="Acesso.html">Novos Pedidos</a></li>
+            <li><a href="lista_pedidos.html">Lista de Pedidos</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    
+    <div id="cabeçalho">
+        <h2>Proposta</h2>
+        <h3>Nosso grupo escolheu a proposta de "Avaliação e desempenho" feita pela Sanofi, nesse projeto teremos que apresentar uma resolução para o problema da empresa, onde aproximadamente 340 colaboradores não possuem acesso ao computador para realizar a autoavaliação, contendo apenas 2 totens em Campinas para atender 3 turnos de trabalho. Tivemos que pensar em uma forma de dar acesso aos colaboradores para incluí-los no processo de avaliação e feedback.</h3>
+    </div>
+
+    <div id="ideias">
+        <h2>Ideias Sugeridas</h2>  
+    </div>
+
+    <section id="propostas">
+        <ul>
+            <li>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="assets/images/Menu.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>Menu Intuitivo</h2>
+                        <h3>Menu de fácil entendimento, com boas cores e ícones que irão facilitar a visibilidade.</h3>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="assets/images/FeedBack.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>Análise feedback</h2>
+                        <h3>Disponibilizaremos uma análise precisa de cada resposta dada.</h3>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="assets/images/Horários.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>Horários</h2>
+                        <h3>Visando praticidade para o cliente, pensamos em adicionar essa tela para facilitar a organização dele.</h3>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="assets/images/Avisos.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>Avisos</h2>
+                        <h3>Quadro de avisos onde todos os lançamentos de formulários e atualizações sobre a empresa serão notificados.</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="secao-planejamento">
+        <h2>Você tem alguma proposta?</h2>
+        <h3>Faça aqui o seu cadastro e vamos fazer negócio!</h3>
+
+        <form id="form-cadastro">
+            <div class="campo nome">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Nome" id="nome" required>
+            </div>
+
+            <div class="campo email">
+                <label for="emails">E-mail</label>
+                <input type="email" id="emails" name="emails" placeholder="E-mail" required>
+            </div>
+            <div class="campo senha">
+                <label for="senhas">Senha</label>
+                <input type="password" id="senhas" name="senhas" placeholder="Senha" required>
+            </div>
+
+            <div class="Botao">
+                <button type="button" id="botao-cancelar" class="outline">Cancelar</button>
+                <button type="submit" id="botao-cadastrar">Cadastrar</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
